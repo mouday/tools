@@ -1,0 +1,51 @@
+// element-plus 样式覆盖
+
+:root {
+  --el-menu-item-height: 50px;
+}
+
+// 黑色主题
+.theme--dark {
+  --el-color-primary: #030303;
+  --el-color-primary-light-3: #030303;
+  --el-color-primary-light-9: #ffffff;
+  --el-color-primary-light-7: #dcdfe6;
+  --el-menu-base-level-padding: 13px;
+  --el-border-radius-base: 20px;
+}
+
+// 蓝色主题
+.theme--blue {
+  --el-color-primary: #006eff;
+  --el-border-radius-base: 0;
+}
+
+.el-table {
+  --el-table-header-bg-color: #fafafa;
+}
+
+// 表格排序图标
+.el-table .caret-wrapper {
+  margin-left: 4px;
+  width: 10px;
+}
+
+.el-table .sort-caret {
+  left: 0;
+}
+
+// 单元格边距
+.el-table .cell {
+  padding: 0 8px;
+}
+
+// 开关
+.el-table .el-switch {
+  transform: scale(0.8);
+}
+
+// css：鼠标经过el-dropdown 组件上会出现一个蓝色的小框
+// https://blog.csdn.net/mouday/article/details/131613224
+:focus-visible {
+  outline: none;
+}

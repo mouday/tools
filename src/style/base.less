@@ -1,0 +1,166 @@
+// html {
+//   // overflow-y: scroll;
+//   // overflow-y: overlay;
+//   margin-right: calc(100% - 100vw);
+//   // padding-left: calc(100vw - 100%);
+//   // scrollbar-gutter: stable;
+//   // overflow-y: overlay;
+// }
+
+// html {
+//   overflow-y: scroll;
+// }
+
+// :root {
+//   overflow-y: auto;
+//   overflow-x: hidden;
+// }
+
+// :root body {
+//   position: absolute;
+// }
+
+html,
+body,
+#app {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  // width: 100vw;
+  // height: 100%;
+  // 该属性导致bug
+  // 使用检索功能精准检索，检索结果只有一条，然后编辑这一条，“分组”下拉列表打不开
+  // overflow: hidden;
+
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-family: PingFang SC, Lantinghei SC, Helvetica Neue, Helvetica, Arial,
+    Microsoft YaHei, '\5FAE\8F6F\96C5\9ED1', STHeitiSC-Light, simsun,
+    '\5B8B\4F53', WenQuanYi Zen Hei, WenQuanYi Micro Hei, 'sans-serif';
+}
+
+.app-container {
+  padding: 20px;
+  background-color: #ffffff;
+
+  // box-shadow: inset 0 -1px 0 0 #EDEFF1;
+}
+
+.margin-top--20 {
+  margin-top: 20px;
+}
+.margin-left--auto {
+  margin-left: auto;
+}
+
+.color--danger {
+  color: #f56c6c;
+
+  &:hover {
+    color: #f56c6c;
+    opacity: 0.8;
+  }
+}
+
+.color--success {
+  color: #67c23a;
+}
+
+.color--warning {
+  color: #e6a23c;
+}
+
+.color--brand {
+  color: #409eff;
+}
+
+.color--info {
+  color: #909399;
+}
+
+// fixbug: safari Message 消息提示 文字换行
+.el-message {
+  width: auto;
+}
+
+.el-text-color-primary {
+  color: var(--el-text-color-primary);
+}
+
+.el-text-color-secondary {
+  color: var(--el-text-color-secondary);
+}
+
+// form查看模式
+.mo-form-detail {
+  .el-form {
+    border: 1px solid #ebeef5;
+  }
+
+  .el-form-item {
+    margin-bottom: 0;
+  }
+
+  .el-form-item + .el-form-item {
+    border-top: 1px solid #ebeef5;
+  }
+
+  .el-form-item__label {
+    background-color: #f5f7fa;
+    justify-content: center;
+    padding: 0;
+    height: unset;
+  }
+
+  .el-form-item__content {
+    padding: 0 10px;
+  }
+}
+
+.mo-table-tag.el-tag {
+  padding: 0 1px;
+}
+
+// 黑色主题
+.theme--dark {
+  .app-container {
+    border: 1px solid #fff;
+    border-radius: 10px;
+  }
+
+  .el-input-group--append > .el-input__wrapper {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+  }
+
+  .el-input-group__append {
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+
+  .el-button--primary {
+    border: 1px solid transparent;
+    // border-radius: 20px;
+  }
+}
+
+// 蓝色主题
+.theme--blue {
+}
+
+// 超链接
+.mo-link {
+  cursor: pointer;
+
+  &:hover {
+    color: var(--el-color-primary);
+  }
+}
+
+// 空状态
+.mo-empty {
+  color: var(--el-text-color-secondary);
+}
