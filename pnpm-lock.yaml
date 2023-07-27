@@ -27,6 +27,7 @@ specifiers:
   less: ^4.1.3
   lodash: ^4.17.21
   mockjs: ^1.1.0
+  naming-style: ^1.0.1
   nprogress: ^0.2.0
   pinia: ^2.1.3
   postcss: ^8.4.17
@@ -60,6 +61,7 @@ dependencies:
   js-cookie: 3.0.1
   lodash: 4.17.21
   mockjs: 1.1.0
+  naming-style: 1.0.1
   nprogress: 0.2.0
   pinia: 2.1.3_vue@3.3.4
   vue: 3.3.4
@@ -1447,6 +1449,10 @@ packages:
     resolution: {integrity: sha512-6FlzubTLZG3J2a/NVCAleEhjzq5oxgHyaCU9yYXvcLsvoVaHJq/s5xXI6/XXP6tz7R9xAOtHnSO/tXtF3WRTlA==}
     dev: true
     optional: true
+
+  /naming-style/1.0.1:
+    resolution: {integrity: sha512-0TReXPuxU6ebUmDQmfDjkCwvhhJ86Gg02/Pliti1+ClkLKFOYBL6CJn+MEPT3nX35tGpyaUl+IwFGmh562TvKA==}
+    dev: false
 
   /nanoid/3.3.4:
     resolution: {integrity: sha512-MqBkQh/OHTS2egovRtLk45wEyNXwF+cokD+1YPf9u5VfJiRdAiRwB2froX5Co9Rh20xs4siNPm8naNotSD6RBw==}
