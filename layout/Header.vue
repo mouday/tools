@@ -64,6 +64,12 @@ export default {
           label: 'SSL配置生成',
           value: 'https://ssl-config.mozilla.org/',
         },
+        {
+          label: 'curl Convert',
+          value: 'https://curlconverter.com/',
+        },
+
+        
       ],
     }
   },

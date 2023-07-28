@@ -2,7 +2,7 @@ import { createApp } from 'vue'
 // import 'modern-css-reset'
 import './style/tailwind.css'
 
-import { createPinia } from 'pinia'
+// import { createPinia } from 'pinia'
 
 // ElementPlus
 import ElementPlus from 'element-plus'
@@ -50,8 +50,8 @@ export function createVueApp(App) {
   }
 
   // pinia
-  const pinia = createPinia()
-  app.use(pinia)
+  // const pinia = createPinia()
+  // app.use(pinia)
 
   return app
 }

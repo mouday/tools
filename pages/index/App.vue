@@ -6,7 +6,7 @@
           <a
             class="item"
             v-if="!item.hidden"
-            :href="item.template"
+            :href="item.url"
             target="_blank"
             >{{ item.title }}</a
           >
@@ -17,7 +17,6 @@
 </template>
 
 <script>
-import pages from '../../vite.page.js'
 import LayoutMain from '../../layout/Main.vue'
 
 export default {
@@ -31,7 +30,12 @@ export default {
 
   data() {
     return {
-      pages,
+      pages: [
+        {
+          title: 'naming style',
+          url: 'pages/naming-style/index.html',
+        },
+      ],
       value: '',
     }
   },
