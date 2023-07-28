@@ -1,32 +1,34 @@
 <template>
-  <div class="app-container">
-    <h2 class="text-center">命名风格转换</h2>
+  <LayoutMain>
+    <div class="app-container">
+      <h2 class="text-center">命名风格转换</h2>
 
-    <div style="width: 500px; margin: 0 auto">
-      <div class="flex items-center mt-md">
-        <span class="">原始字符串：</span>
-        <el-input
-          style="width: 300px"
-          v-model="value"
-        ></el-input>
-      </div>
+      <div style="width: 500px; margin: 0 auto">
+        <div class="flex items-center mt-md">
+          <span class="">原始字符串：</span>
+          <el-input
+            style="width: 300px"
+            v-model="value"
+          ></el-input>
+        </div>
 
-      <div class="mo-form-detail mt-md">
-        <el-form label-width="200px">
-          <template v-for="item in list">
-            <el-form-item :label="`${item.title} (${item.label})`">
-              <div
-                class="flex items-center justify-between flex-1"
-                @click="handleCopy(item.value)"
-              >
-                {{ item.value || '-' }}
-              </div>
-            </el-form-item>
-          </template>
-        </el-form>
+        <div class="mo-form-detail mt-md">
+          <el-form label-width="200px">
+            <template v-for="item in list">
+              <el-form-item :label="`${item.title} (${item.label})`">
+                <div
+                  class="flex items-center justify-between flex-1"
+                  @click="handleCopy(item.value)"
+                >
+                  {{ item.value || '-' }}
+                </div>
+              </el-form-item>
+            </template>
+          </el-form>
+        </div>
       </div>
     </div>
-  </div>
+  </LayoutMain>
 </template>
 
 <script>
@@ -42,13 +44,16 @@ import {
   sentence,
 } from 'naming-style'
 import copy from 'copy-to-clipboard'
+import LayoutMain from '../../layout/Main.vue'
 
 export default {
   name: 'index',
 
   props: {},
 
-  components: {},
+  components: {
+    LayoutMain,
+  },
 
   data() {
     return {

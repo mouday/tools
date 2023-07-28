@@ -3,6 +3,9 @@ import vue from '@vitejs/plugin-vue'
 import path from 'path'
 import { visualizer } from 'rollup-plugin-visualizer'
 // import viteCompression from 'vite-plugin-compression'
+import pages from './vite.page.js'
+// import { resolve } from 'path'
+import { resolve } from 'path'
 
 // https://vitejs.dev/config/
 export default defineConfig((config) => {
@@ -21,6 +24,9 @@ export default defineConfig((config) => {
       vue(),
       // gzip
       // viteCompression(),
+      // createHtmlPlugin({
+      //   pages,
+      // }),
     ],
 
     build: {
@@ -29,6 +35,11 @@ export default defineConfig((config) => {
       chunkSizeWarningLimit: 1000,
 
       rollupOptions: {
+        input: {
+          index: resolve(__dirname, 'index.html'),
+          'naming-style': resolve(__dirname, 'pages/naming-style/index.html'),
+        },
+        
         output: {
           chunkFileNames: 'js/[name].[hash].js',
           entryFileNames: 'js/[name].[hash].js',
@@ -37,25 +48,25 @@ export default defineConfig((config) => {
             'vendor-vue': ['vue', 'vue-router', 'pinia'],
             'element-icon': ['@element-plus/icons-vue'],
             'element-plus': ['element-plus'],
-            'highlight-lib': ['highlight.js'],
-            'codemirror-lib': [
-              'codemirror',
-              '@codemirror/lang-json',
-              '@codemirror/theme-one-dark',
-              '@ssddanbrown/codemirror-lang-twig',
-              'vue-codemirror',
-            ],
+            // 'highlight-lib': ['highlight.js'],
+            // 'codemirror-lib': [
+            //   'codemirror',
+            //   '@codemirror/lang-json',
+            //   '@codemirror/theme-one-dark',
+            //   '@ssddanbrown/codemirror-lang-twig',
+            //   'vue-codemirror',
+            // ],
             'vendor-lib': [
-              'axios',
+              // 'axios',
               'file-saver',
-              'js-cookie',
+              // 'js-cookie',
               'dayjs',
-              'cron-parser',
-              'cron-validator',
-              'copy-to-clipboard',
+              // 'cron-parser',
+              // 'cron-validator',
+              // 'copy-to-clipboard',
               'nprogress',
-              'mockjs',
-              'lodash',
+              // 'mockjs',
+              // 'lodash',
             ],
           },
         },
