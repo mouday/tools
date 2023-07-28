@@ -17,7 +17,7 @@
         alt=""
         srcset=""
       />
-      <span>Domain Admin</span>
+      <span>More Tools</span>
     </a>
 
     <div class="header-breadcrumb">
@@ -113,34 +113,34 @@ export default {
     ]
 
     const toolList = [
-      {
-        type: 'router', // 路由
-        label: 'SSL证书申请',
-        value: 'issue-certificate-list',
-      },
+      // {
+      //   type: 'router', // 路由
+      //   label: 'SSL证书申请',
+      //   value: 'issue-certificate-list',
+      // },
 
-      {
-        type: 'router', // 路由
-        label: 'WHOIS查询',
-        value: 'lab',
-      },
-      {
-        type: 'router', // 路由
-        label: '子域名证书查询',
-        value: 'domain-cert-list',
-      },
+      // {
+      //   type: 'router', // 路由
+      //   label: 'WHOIS查询',
+      //   value: 'lab',
+      // },
+      // {
+      //   type: 'router', // 路由
+      //   label: '子域名证书查询',
+      //   value: 'domain-cert-list',
+      // },
 
-      {
-        type: 'router', // 路由
-        label: '证书信息查询',
-        value: 'cert-info',
-      },
+      // {
+      //   type: 'router', // 路由
+      //   label: '证书信息查询',
+      //   value: 'cert-info',
+      // },
 
-      {
-        type: 'router', // 路由
-        label: 'ICP备案查询',
-        value: 'icp-info',
-      },
+      // {
+      //   type: 'router', // 路由
+      //   label: 'ICP备案查询',
+      //   value: 'icp-info',
+      // },
 
       {
         type: 'url', // 外链

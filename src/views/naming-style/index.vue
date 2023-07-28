@@ -153,6 +153,10 @@ export default {
     async getData() {},
 
     handleCopy(data) {
+      if (!data) {
+        return
+      }
+
       copy(data)
       this.$msg.success('已复制到剪切板')
     },

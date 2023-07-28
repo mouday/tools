@@ -28,8 +28,9 @@ export const routes = [
     path: '/tools',
     name: 'tools',
     component: Layout,
+    
     meta: {
-      title: '证书',
+      title: '工具',
       icon: 'Tickets',
     },
 
