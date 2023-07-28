@@ -80,6 +80,10 @@ export default {
 
   methods: {
     async getData() {},
+    
+    handleToolItemClick(item) {
+      window.open(item.value, '_blank')
+    },
   },
 
   created() {
