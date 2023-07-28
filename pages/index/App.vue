@@ -55,7 +55,7 @@ export default {
 .item {
   display: flex;
   align-items: center;
-  width: calc(33% - 5.33333px);
+  width: 250px;
   margin-bottom: 12px;
   background: #fcfcfc;
   padding: 10px;
