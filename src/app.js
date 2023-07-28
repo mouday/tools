@@ -12,7 +12,7 @@ import 'element-plus/dist/index.css'
 // ElementPlusIconsVue
 import * as ElementPlusIconsVue from '@element-plus/icons-vue'
 
-import { Http } from './api/index.js'
+// import { Http } from './api/index.js'
 import SingleMessage from './components/single-message/index.js'
 // import { router } from './router/index.js'
 
@@ -33,7 +33,7 @@ import './style/element-plus.less'
 export function createVueApp(App) {
   const app = createApp(App)
 
-  app.config.globalProperties.$http = Http
+  // app.config.globalProperties.$http = Http
   app.config.globalProperties.$msg = SingleMessage
   // app.config.globalProperties.$loading = ElLoading.service
 

@@ -12,12 +12,16 @@ export default defineConfig((config) => {
   console.log(config)
 
   const viteConfig = {
-    base: './',
+    base: config.mode == 'development' ? '/' : '/tools/',
 
     resolve: {
       alias: {
         '@': path.resolve(__dirname, './src'),
       },
+    },
+
+    server: {
+      open: true,
     },
 
     plugins: [
@@ -39,7 +43,7 @@ export default defineConfig((config) => {
           index: resolve(__dirname, 'index.html'),
           'naming-style': resolve(__dirname, 'pages/naming-style/index.html'),
         },
-        
+
         output: {
           chunkFileNames: 'js/[name].[hash].js',
           entryFileNames: 'js/[name].[hash].js',
