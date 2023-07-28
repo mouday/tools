@@ -30,7 +30,7 @@ export default {
     let isCollapse = localStorage.getItem('isCollapse')
     this.setIsCollapse(isCollapse == 'true')
 
-    this.updateVersion()
+    // this.updateVersion()
   },
 }
 </script>
