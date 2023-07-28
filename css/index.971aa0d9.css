@@ -1,0 +1,1 @@
+.items{display:grid;grid-template-columns:repeat(3,1fr)}.item{display:flex;align-items:center;width:calc(33% - 5.33333px);margin-bottom:12px;background:#fcfcfc;padding:10px;height:72px;border-radius:3px;border:1px solid #efefef;cursor:pointer;transition:opacity .3s,border-color .3s}.item:hover{opacity:.75}
