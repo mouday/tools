@@ -68,8 +68,10 @@ export default {
           label: 'curl Convert',
           value: 'https://curlconverter.com/',
         },
-
-        
+        {
+          label: 'JSON Web Token',
+          value: 'https://jwt.io/',
+        },
       ],
     }
   },
