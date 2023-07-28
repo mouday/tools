@@ -24,23 +24,6 @@
       <Breadcrumb></Breadcrumb>
     </div>
     <div class="self-center margin-left--auto flex items-center">
-      <a
-        href="https://www.chatpet.top/"
-        class="ad-wrap mr-md"
-        target="_blank"
-      >
-        <img
-          src="@/assets/chatpet.jpg"
-          alt=""
-          class="ad-img ad-img--blue"
-        />
-        <img
-          src="@/assets/chatpet-white.jpg"
-          alt=""
-          class="ad-img ad-img--white"
-        />
-      </a>
-
       <el-dropdown trigger="hover">
         <div class="header-tool-btn">
           <el-icon><Suitcase /></el-icon>
@@ -67,55 +50,6 @@
                 >{{ item.label }}</el-dropdown-item
               >
             </template>
-          </el-dropdown-menu>
-        </template>
-      </el-dropdown>
-
-      <el-radio-group
-        v-model="theme"
-        size="small"
-        class="ml-md"
-        @change="handleThemeChange"
-      >
-        <el-radio-button
-          v-for="item in themeList"
-          :key="item.value"
-          :label="item.value"
-          >{{ item.label }}</el-radio-button
-        >
-      </el-radio-group>
-
-      <el-dropdown trigger="hover">
-        <div class="avatar-group ml-sm">
-          <el-avatar :src="avatar"></el-avatar>
-          <span>{{ username }}</span>
-        </div>
-
-        <template #dropdown>
-          <el-dropdown-menu>
-            <!-- <el-dropdown-item
-              @click="handleUserInfoEditOpen"
-              class="justify-center"
-              >个人设置</el-dropdown-item
-            > -->
-
-            <el-dropdown-item
-              @click="handleUpdatePasswordClick"
-              class="justify-center"
-              >修改密码</el-dropdown-item
-            >
-
-            <el-dropdown-item
-              @click="handleAboutClick"
-              class="justify-center"
-              >关于</el-dropdown-item
-            >
-
-            <el-dropdown-item
-              @click="handleLogoutClick"
-              class="justify-center"
-              >退出</el-dropdown-item
-            >
           </el-dropdown-menu>
         </template>
       </el-dropdown>

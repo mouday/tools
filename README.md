@@ -1,5 +1,12 @@
 # domain-admin-web
 
+可参考：
+
+https://tools.fun/base64.html
+
+vue3 + vite 多项目多模块打包
+https://blog.csdn.net/gaofengzks/article/details/129879677
+
 项目地址：[https://github.com/mouday/domain-admin-web](https://github.com/mouday/domain-admin-web)
 
 国内镜像：[https://gitee.com/mouday/domain-admin-web](https://gitee.com/mouday/domain-admin-web)
