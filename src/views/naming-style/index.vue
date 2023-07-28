@@ -15,15 +15,11 @@
         <el-form label-width="200px">
           <template v-for="item in list">
             <el-form-item :label="`${item.title} (${item.label})`">
-              <div class="flex items-center justify-between flex-1">
-                <span>{{ item.value || '-' }}</span>
-
-                <el-link
-                  v-if="item.value"
-                  :underline="false"
-                  @click="handleCopy(item.value)"
-                  ><el-icon class="cursor-pointer"><DocumentCopy /></el-icon
-                ></el-link>
+              <div
+                class="flex items-center justify-between flex-1"
+                @click="handleCopy(item.value)"
+              >
+                {{ item.value || '-' }}
               </div>
             </el-form-item>
           </template>
