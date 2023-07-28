@@ -6,13 +6,15 @@ import { visualizer } from 'rollup-plugin-visualizer'
 import pages from './vite.page.js'
 // import { resolve } from 'path'
 import { resolve } from 'path'
+import { createHtmlPlugin } from 'vite-plugin-html'
 
 // https://vitejs.dev/config/
 export default defineConfig((config) => {
   console.log(config)
+  const baseUrl = config.mode == 'development' ? '/' : '/tools/'
 
   const viteConfig = {
-    base: config.mode == 'development' ? '/' : '/tools/',
+    base: baseUrl,
 
     resolve: {
       alias: {
@@ -31,6 +33,14 @@ export default defineConfig((config) => {
       // createHtmlPlugin({
       //   pages,
       // }),
+
+      createHtmlPlugin({
+        inject: {
+          data: {
+            BASE_URL: baseUrl,
+          },
+        },
+      }),
     ],
 
     build: {
