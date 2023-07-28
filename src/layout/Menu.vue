@@ -49,12 +49,6 @@
             </el-sub-menu>
           </template>
         </template>
-
-        <!-- 收起时不显示 -->
-        <Info
-          class="menu-info"
-          v-show="!isCollapse"
-        />
       </el-menu>
 
       <!-- 展开收起 -->
@@ -164,7 +158,7 @@ export default {
 
   created() {
     this.activeIndex = this.$route.name
-    console.log(this.activeIndex);
+    console.log(this.activeIndex)
     this.getData()
   },
 }
