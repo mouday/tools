@@ -59,6 +59,7 @@ export default defineConfig((config) => {
         input: {
           index: resolve(__dirname, 'index.html'),
           'naming-style': resolve(__dirname, 'pages/naming-style/index.html'),
+          'letter-avatar': resolve(__dirname, 'pages/letter-avatar/index.html'),
         },
 
         output: {
