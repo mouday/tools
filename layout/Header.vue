@@ -10,35 +10,47 @@
           alt=""
       /></a>
 
-      <el-dropdown trigger="hover">
-        <div class="header-tool-btn">
-          <el-icon><Suitcase /></el-icon>
-          <span class="header-tool-btn__text">工具箱</span>
-          <el-icon><arrow-down /></el-icon>
-        </div>
+      <div class="layout__header__right">
+        <el-dropdown trigger="hover">
+          <div class="header-tool-btn">
+            <el-icon><Suitcase /></el-icon>
+            <span class="header-tool-btn__text">工具箱</span>
+            <el-icon><arrow-down /></el-icon>
+          </div>
 
-        <template #dropdown>
-          <el-dropdown-menu>
-            <template v-for="item in toolList">
-              <!-- 外链 -->
-              <el-dropdown-item
-                v-if="item.type == 'url'"
-                @click="handleToolItemClick(item)"
-                class="justify-center"
-                >{{ item.label }}<el-icon><Link /></el-icon
-              ></el-dropdown-item>
+          <template #dropdown>
+            <el-dropdown-menu>
+              <template v-for="item in toolList">
+                <!-- 外链 -->
+                <el-dropdown-item
+                  v-if="item.type == 'url'"
+                  @click="handleToolItemClick(item)"
+                  class="justify-center"
+                  >{{ item.label }}<el-icon><Link /></el-icon
+                ></el-dropdown-item>
 
-              <!-- 路由 -->
-              <el-dropdown-item
-                v-else
-                @click="handleToolItemClick(item)"
-                class="justify-center"
-                >{{ item.label }}</el-dropdown-item
-              >
-            </template>
-          </el-dropdown-menu>
-        </template>
-      </el-dropdown>
+                <!-- 路由 -->
+                <el-dropdown-item
+                  v-else
+                  @click="handleToolItemClick(item)"
+                  class="justify-center"
+                  >{{ item.label }}</el-dropdown-item
+                >
+              </template>
+            </el-dropdown-menu>
+          </template>
+        </el-dropdown>
+
+        <a
+          href="https://github.com/mouday/tools"
+          target="_blank"
+          class="ml-md"
+        >
+          <img
+            alt="GitHub stars"
+            src="https://img.shields.io/github/stars/mouday/tools.svg?style=social"
+        /></a>
+      </div>
     </div>
   </div>
 </template>
@@ -80,7 +92,7 @@ export default {
 
   methods: {
     async getData() {},
-    
+
     handleToolItemClick(item) {
       window.open(item.value, '_blank')
     },
@@ -128,6 +140,11 @@ export default {
 
 .layout__header__logo {
   height: 40px;
+}
+
+.layout__header__right {
+  display: flex;
+  align-items: center;
 }
 </style>
 
