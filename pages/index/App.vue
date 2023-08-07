@@ -39,6 +39,10 @@ export default {
           title: '生成文字头像',
           url: 'pages/letter-avatar/index.html',
         },
+        {
+          title: '代码格式化',
+          url: 'pages/code-format/index.html',
+        },
       ],
       value: '',
     }
