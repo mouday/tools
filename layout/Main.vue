@@ -1,8 +1,10 @@
 <template>
-  <div class="">
+  <div class="layout">
     <Header></Header>
-    <slot></slot>
-    <!-- <Footer></Footer> -->
+    <div class="layout__main">
+      <slot></slot>
+    </div>
+    <Footer></Footer>
   </div>
 </template>
 
@@ -37,6 +39,11 @@ export default {
 }
 </script>
 
-<style lang="less"></style>
+<style lang="less">
+.layout__main {
+  min-height: calc(100vh - 118px);
+  padding: 20px 0;
+}
+</style>
 
 <style lang="less" scoped></style>

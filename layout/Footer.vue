@@ -1,6 +1,13 @@
 <template>
   <div class="layout__footer-wrap">
-    <div class="layout__footer"></div>
+    <div class="layout__footer">
+      <span>友情链接：</span>
+      <a
+        href="https://qushuiyin.guijianpan.com"
+        target="_blank"
+        >小熊猫去水印</a
+      >
+    </div>
   </div>
 </template>
 
@@ -31,13 +38,16 @@ export default {
 
 <style lang="less">
 .layout__footer-wrap {
-  margin-top: 20px;
+  // margin-top: 20px;
   padding: 20px 0;
   background: #2b303b;
   color: #909090;
+  font-size: 12px;
 }
 
 .layout__footer {
+  width: 1000px;
+  margin: 0 auto;
 }
 </style>
 

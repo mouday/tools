@@ -107,7 +107,7 @@ export default {
 <style lang="less">
 .layout__header-wrap {
   background: #2b303b;
-  margin-bottom: 20px;
+  // margin-bottom: 20px;
 }
 
 .layout__header {
