@@ -18,6 +18,7 @@
 
 <script>
 import LayoutMain from '../../layout/Main.vue'
+import {PAGES} from './config.js'
 
 export default {
   name: 'index',
@@ -30,20 +31,7 @@ export default {
 
   data() {
     return {
-      pages: [
-        {
-          title: '命名风格转换',
-          url: 'pages/naming-style/index.html',
-        },
-        {
-          title: '生成文字头像',
-          url: 'pages/letter-avatar/index.html',
-        },
-        {
-          title: '代码格式化',
-          url: 'pages/code-format/index.html',
-        },
-      ],
+      pages: PAGES,
       value: '',
     }
   },
