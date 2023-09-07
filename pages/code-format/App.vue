@@ -13,7 +13,11 @@
           />
         </el-select>
 
-        <el-button class="ml-sm" @click="handleFormat">格式化</el-button>
+        <el-button
+          class="ml-sm"
+          @click="handleFormat"
+          >格式化</el-button
+        >
         <el-button @click="handleCopy">复制</el-button>
       </div>
 
@@ -24,6 +28,7 @@
           :autofocus="true"
           :style="{
             height: '100%',
+            'min-height': '500px',
             'font-size': '16px',
           }"
           :indent-with-tab="true"
