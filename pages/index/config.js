@@ -15,4 +15,10 @@ export const PAGES = [
     title: '随机密码生成',
     url: 'pages/password/index.html',
   },
+
+  {
+    title: 'UUID生成',
+    url: 'pages/uuid/index.html',
+  },
+  
 ]

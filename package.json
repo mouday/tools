@@ -33,9 +33,11 @@
     "lodash": "^4.17.21",
     "mockjs": "^1.1.0",
     "naming-style": "^1.0.1",
+    "nanoid": "^4.0.2",
     "nprogress": "^0.2.0",
     "pinia": "^2.1.3",
     "prettier": "3.0.1",
+    "uuid": "^9.0.0",
     "vue": "^3.3.4",
     "vue-codemirror": "^6.1.1",
     "vue-router": "^4.2.2"
