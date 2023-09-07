@@ -62,6 +62,7 @@ export default defineConfig((config) => {
           'letter-avatar': resolve(__dirname, 'pages/letter-avatar/index.html'),
           'code-format': resolve(__dirname, 'pages/code-format/index.html'),
           'password': resolve(__dirname, 'pages/password/index.html'),
+          'uuid': resolve(__dirname, 'pages/uuid/index.html'),
         },
 
         output: {
