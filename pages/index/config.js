@@ -20,5 +20,9 @@ export const PAGES = [
     title: 'UUID生成',
     url: 'pages/uuid/index.html',
   },
+  {
+    title: '颜色转换',
+    url: 'pages/color-convert/index.html',
+  },
   
 ]
