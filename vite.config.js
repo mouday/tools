@@ -57,12 +57,13 @@ export default defineConfig((config) => {
 
       rollupOptions: {
         input: {
-          index: resolve(__dirname, 'index.html'),
+          'index': resolve(__dirname, 'index.html'),
           'naming-style': resolve(__dirname, 'pages/naming-style/index.html'),
           'letter-avatar': resolve(__dirname, 'pages/letter-avatar/index.html'),
           'code-format': resolve(__dirname, 'pages/code-format/index.html'),
           'password': resolve(__dirname, 'pages/password/index.html'),
           'uuid': resolve(__dirname, 'pages/uuid/index.html'),
+          'color-convert': resolve(__dirname, 'pages/color-convert/index.html'),
         },
 
         output: {
